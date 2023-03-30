@@ -33,4 +33,12 @@
   a:hover {
     color: #3e8e41;
   }
+
+  input.ng-invalid.ng-touched {
+    border: 1px solid red;
+  }
+
+  .help-block{
+    color: red;
+  }
   
