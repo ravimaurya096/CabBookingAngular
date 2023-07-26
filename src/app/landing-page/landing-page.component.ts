@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class LandingPageComponent {
 
+  clicked = false
+
+  submitted(){
+    this.clicked = !this.clicked
+  }
+
 }

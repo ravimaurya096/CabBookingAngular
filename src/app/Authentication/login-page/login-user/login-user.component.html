@@ -1,0 +1,39 @@
+
+  
+    <!-- Custom CSS -->
+    <div class="container" style="margin: 15vh;">
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <div class="container" *ngIf="isLoading" style="text-align: center;">
+              <app-loading-spinner></app-loading-spinner>
+            </div>
+            <div class="card-header"  *ngIf="!isLoading">
+              <h2>User Login</h2>
+            </div>
+            <div class="card-body"  *ngIf="!isLoading">
+              <form (ngSubmit)="onSubmit()" #f="ngForm">
+                <div class="form-group">
+                  <input type="email" class="form-control" id="email" placeholder="Email" ngModel name="email" required
+                  #email="ngModel">
+                </div>
+                <br>
+                <div class="form-group">
+                  <input type="password" class="form-control" id="password" placeholder="Password" ngModel name="password" required minlength="6">
+                </div>
+                <br>
+                <button type="submit" class="btn btn-success" [disabled]="!f.valid">Login</button>
+                <br>
+                <div class="forgot-password">
+                  <a routerLink="forgetpass">Forgot password?</a>
+                </div>
+              </form>
+            </div>
+            <div class="signup-link">
+              <p>Don't have an account? <a routerLink="/signup">Sign up</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  

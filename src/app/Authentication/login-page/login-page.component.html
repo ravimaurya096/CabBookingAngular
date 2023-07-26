@@ -1,34 +1,18 @@
 
+<div class="container" style="margin: auto; margin-top: 15vh; background-color: rgb(242, 242, 242); width: 40vw; height: 8vh;">
 
-  <!-- Custom CSS -->
-  <div class="container" style="margin: 15vh;">
-    <div class="row justify-content-center">
-      <div class="col-md-6 col-lg-4">
-        <div class="card">
-          <div class="card-header">
-            <h2>User Login</h2>
-          </div>
-          <div class="card-body">
-            <form>
-              <div class="form-group">
-                <input type="email" class="form-control" id="email" placeholder="Email">
-              </div>
-              <br>
-              <div class="form-group">
-                <input type="password" class="form-control" id="password" placeholder="Password">
-              </div>
-              <br>
-              <button type="submit" class="btn btn-success">Login</button>
-              <br>
-              <div class="forgot-password">
-                <a routerLink="forgetpass">Forgot password?</a>
-              </div>
-            </form>
-          </div>
-          <div class="signup-link">
-            <p>Don't have an account? <a routerLink="/signup">Sign up</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class="row" style="margin: auto;">
+    <div class="col-sm-4 text-primary" routerLinkActive="active"><button class="btn btn-primary" (click)="userClicked()">User Login</button></div>
+    <div class="col-sm-4 text-primary" routerLinkActive="active"><button class="btn btn-primary" (click)="driverClicked()">Driver login</button></div>
+    <div class="col-sm-4 text-primary" routerLinkActive="active"><button class="btn btn-primary" (click)="adminClicked()">Admin Login</button></div>
+  
   </div>
+
+   
+
+</div>
+
+<app-login-user *ngIf="isUser"></app-login-user>
+<app-login-driver *ngIf="isDriver"></app-login-driver>
+<app-login-admin *ngIf="isAdmin"></app-login-admin>
+

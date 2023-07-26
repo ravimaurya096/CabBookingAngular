@@ -73,8 +73,3 @@
   input.ng-invalid.ng-touched {
     border: 1px solid red;
   }
-
-  .active{
-    background-color: white;
-    color: black;
-  }

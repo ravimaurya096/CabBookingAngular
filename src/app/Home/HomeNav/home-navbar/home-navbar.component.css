@@ -1,0 +1,35 @@
+/* Navbar */
+.navbar {
+    background-color: #fff;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Brand */
+  .navbar-brand {
+    font-size: 2rem;
+    color: #333;
+    font-weight: bold;
+    margin-right: auto;
+  }
+  
+  /* Nav links */
+  .navbar-nav .nav-link {
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+  }
+  
+  /* Logout button */
+  .navbar-nav .nav-link:last-child {
+    background-color: #333;
+    color: #fff;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .navbar-nav .nav-link:last-child:hover {
+    background-color: #555;
+  }
+  
